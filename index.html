@@ -11,21 +11,23 @@
 				float: left;
 				padding: 0.5%;
 			}
-			body {margin: 0;}
+			body {
+				margin: 0;
+			}
 			
 			table {
 				color: white;
+			}
+			
+			img {
+				width: 100%;
+				height: 50%;
 			}
 		</style>
 	</head>
 	<body>
 		<div style="width: 100%; height: 800px; clear: both;">
-			<video autoplay>
-				<source  src="https://www.youtube.com/watch?v=nKFDp9Y52-o"></source>
-				<source type="video/ogg; codecs='theora, vorbis'" src="https://www.youtube.com/watch?v=nKFDp9Y52-o"></source>
-				<source type="video/mp3; codecs='avc1.42E01E1, MP4A.40.2'" src="https://www.youtube.com/watch?v=nKFDp9Y52-o"></source>
-				<source type="video/webm; codecs='theora, vorbis'" src="https://www.youtube.com/watch?v=nKFDp9Y52-o"></source>
-			</video>
+			<iframe width="789" height="444" src="https://www.youtube.com/embed/nKFDp9Y52-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div>
 			<h1>
@@ -85,8 +87,8 @@
 				случайный текст
 			</p>
 			<nav>
-				<a href="#id=header1">ссылка</a>
-				<a href="#id=header2">ссылка</a>
+				<a href="#header1">ссылка</a>
+				<a href="#header2">ссылка</a>
 			</nav>
 		</div>
 		<div>
@@ -104,8 +106,8 @@
 			</dl>
 		</div>
 		<div>
-			<!--<img src="//im0-tub-ru.yandex.net/i?id=16e49babef5673075c71769aea43dc91-l&n=13" alt="Ламберт Ламберт хер моржовый, Ламберт Ламберт вредный хуй">
-			<a href="//www.ystu.ru"><img src="//yarwiki.ru/uploaded/b/e/bed7108e96040fff10b475634fbec540-1000.jpg"></a>-->
+			<img src="https://im0-tub-ru.yandex.net/i?id=16e49babef5673075c71769aea43dc91-l&n=13" alt="Ламберт Ламберт *** моржовый, Ламберт Ламберт вредный ***">
+			<a href="www.ystu.ru"><img src="https://yarwiki.ru/uploaded/b/e/bed7108e96040fff10b475634fbec540-1000.jpg" alt="ЯГТУ"></a>
 		</div>
 		<div>
 			<table>
@@ -251,7 +253,7 @@
 					
 					if (this.flag) {
 						this.flag = false;
-						setInterval(this.randomTile, 200);
+						setInterval(this.randomTile, 100);
 					}
 				};
 				
